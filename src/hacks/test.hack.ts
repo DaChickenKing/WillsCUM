@@ -10,4 +10,3 @@ export class TestHack extends ActivatableHack {
 		await Swal.fire("Title!", "Description...?", "info");
 	}
 }
-categories.test.addHack(new TestHack(gameController));

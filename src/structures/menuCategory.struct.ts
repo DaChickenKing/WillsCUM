@@ -17,4 +17,7 @@ export class MenuCategory {
 	addHack(hack: Hack) {
 		this.content.append(hack.button);
 	}
+	addHacks(...hacks: Hack[]) {
+		this.content.append(...hacks.map(x => x.button))
+	}
 }
