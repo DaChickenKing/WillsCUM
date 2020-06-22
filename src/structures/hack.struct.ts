@@ -12,3 +12,4 @@ export abstract class Hack {
 	protected abstract initialize(): void;
 
 }
+"testing foo"
