@@ -6,10 +6,9 @@ export abstract class Hack {
 	public abstract name: string;
 	public abstract description: string;
 	public abstract category: MenuCategory;
-	constructor(protected _gameController: GameController) {
+	constructor(protected control: GameController) {
 		this.initialize();
 	}
 	protected abstract initialize(): void;
 
 }
-"testing foo"

@@ -2,10 +2,10 @@ import { Player } from "../../typings/player";
 
 export class GamePlayer {
 	constructor(protected _player: Player) {}
-	getGold() {
-		return this._player.getGold();
+	get gold() {
+		return this._player.data.gold;
 	}
-	setGold(amount: number) {
-		return this._player.data.gold = amount;
+	set gold(amount: number) {
+		this._player.data.gold = amount;
 	}
 }

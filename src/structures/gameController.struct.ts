@@ -2,7 +2,7 @@ import { GamePlayer } from "./gamePlayer.struct";
 
 export class GameController {
 	public player = new GamePlayer(this._player);
-	
+
 	public get prodigy() {
 		return hack.instance.prodigy;
 	};
@@ -11,5 +11,8 @@ export class GameController {
 	};
 	protected get _player() {
 		return hack.player;
+	}
+	public get internalPlayer() {
+		return this._player;
 	}
 }

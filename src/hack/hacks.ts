@@ -1,1 +1,0 @@
-export { TestHack } from "../hacks/test.hack";

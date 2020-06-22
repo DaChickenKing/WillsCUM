@@ -5,6 +5,6 @@ import { GameController } from "./structures/gameController.struct";
 console.log("Ready!");
 export const menu = new Menu();
 export const categories = {
-	test: new MenuCategory(menu, "Test")
+	player: new MenuCategory(menu, "Player")
 }
 export const gameController = new GameController();

@@ -7,7 +7,7 @@ export class MenuCategory {
 	constructor(protected menu: Menu, name: string) {
 		this._element.classList.add("cum-category");
 		this.menu.content.append(this._element);
-		const title = document.createElement("h2");
+		const title = document.createElement("h3");
 		title.classList.add("cum-category-title");
 		title.innerText = name;
 		this._element.append(title);
