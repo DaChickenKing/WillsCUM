@@ -1,8 +1,8 @@
-import { PIXI } from "../typings/pixi";
-import { BackpackData } from "../typings/backpack";
-import { Player } from "../typings/player";
-import { Prodigy } from "../typings/prodigy";
-import { Game } from "../typings/game"
+import { PIXI } from "./pixi";
+import { BackpackData } from "./backpack";
+import { Player } from "./player";
+import { Prodigy } from "./prodigy";
+import { Game } from "./game"
 export declare interface HackFunctions {
 	completeTutorial(): void;
 	getAllPets(): void;

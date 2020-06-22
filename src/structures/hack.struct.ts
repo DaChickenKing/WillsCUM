@@ -1,7 +1,11 @@
+import { GameController } from "./gameController.struct";
+
 export abstract class Hack {
 	protected button = document.createElement("button");
-	constructor(public name: string, public description: string) {
-		this.initialize()
+	public abstract name: string;
+	public abstract description: string;
+	constructor(protected _gameController: GameController) {
+		this.initialize();
 	}
 	protected abstract initialize(): void;
 
