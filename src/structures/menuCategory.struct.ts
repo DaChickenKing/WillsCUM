@@ -1,4 +1,5 @@
 import type { Menu } from "./menu.struct";
+import { Hack } from "./hack.struct";
 
 export class MenuCategory {
 	protected _element = document.createElement("div");
@@ -9,6 +10,11 @@ export class MenuCategory {
 		const title = document.createElement("h2");
 		title.classList.add("cum-category-title");
 		title.innerText = name;
+		this._element.append(title);
 		this.content.classList.add("cum-category-content");
+		this._element.append(this.content)
+	}
+	addHack(hack: Hack) {
+		this.content.append(hack.button);
 	}
 }
